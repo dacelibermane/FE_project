@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FE project</title>
+</head>
+<body>
+  <header class="main-head">
+      <h1 id="logo">Delicious</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="http://" target="_blank">Services</a></li>
+          <li><a href="http://" target="_blank">Projects</a></li>
+          <li><a href="http://" target="_blank">About</a></li>
+        </ul>
+    </nav>
+    <button class="btn" onclick="openForm()">Click me!</button>
+  </header>
+
+  <div class="popup-form" id="clientForm">
+    <div class="form-content">
+      <form class="input-group">
+        <input type="text" class="input-field" placeholder="Email" required>
+        <input type="text" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="check-box" id="sendOffers" onclick="showHideSubscription()"><span>Send me special offers</span>
+      </form>
+    <div id="receiveOffers">
+      <label for="offers">I would like to receive special offers:</label>
+      <select id="receiveOffers" name="offers">
+      <option value="daily">Once a day</option>
+      <option value="weekly">Once a week</option>
+      <option value="monthlu">Once a month</option>
+     </select>
+    </div>
+    <a href="" class="btn" id="submitBtn">Submit</a>
+  </div>  
+  </div>
+
+
+
+ <script src="js/main.js"></script>
+</body>
+</html>

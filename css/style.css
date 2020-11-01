@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
@@ -76,27 +75,69 @@ h1 {
 }
 
 .form-content {
-  width: 350px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   background-color: #bed0f2;
   border-radius: 10px;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   font-size: 16px;
+  position: relative;
 }
 
-.input-field {
+#inputGroup {
+  margin-top: 32px;
+}
+
+.input-wrapper {
   width: 50%;
   display: block;
-  margin: 15px auto;
-  border-radius: 3px;
+  margin: 10px auto;
   border: none;
-  padding: 3px;
+  padding: 6px;
+}
+
+.user-input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.error-msg {
+  height: 12px;
+  font-size: 16px;
+  color: #700606;
+  position: absolute;
+  left: 210px;
+  padding: 2 px;
+}
+
+#sendOffers,
+#receiveOffers {
+  margin-top: 6px;
+  margin-bottom: 15px;
 }
 
 #submitBtn {
-  display: block;
-  width: 20%;
-  justify-content: center;
   text-align: center;
+  margin: 15px auto;
+  background-color: #031944;
+  padding: 8px 24px;
+  border: 2px solid #dff5f7;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#submitBtn:hover {
+  background-color: #5b77aa;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  color: #031944;
 }

@@ -1,10 +1,21 @@
-function showHideSubscription() {
-  if(document.getElementById('sendOffers').checked) {
-    document.getElementById('receiveOffers').style.display='block';
+window.addEventListener('load', function() {
+  document.getElementById('submitBtn').addEventListener('click', function(){
+    const form = document.getElementById('inputGroup').elements;
 
-  }else{
-    document.getElementById('receiveOffers').style.display='none';
+    if (isFormValid(form)) {
+      console.log('can be saved')
+    } else{
+      console.log('form not valid')
+    }
+  });
+
+  function isFormValid(form) {
+    let isFormValid = true;
+
+    const userName = form.namedItem('username').value;
+
+    console.log(userName);
+    return isFormValid;
   }
-}
+})
 
-showHideSubscription();

@@ -19,7 +19,7 @@
           <li><a href="http://" target="_blank">About</a></li>
         </ul>
     </nav>
-    <button class="btn" onclick="openForm()">Click me!</button>
+    <a href="#" id="btn" class="btn">Click me</a>
   </header>
 
   <div class="popup-form">
@@ -39,7 +39,7 @@
           <div class="error-msg password">Test error</div>
         </div>
 
-        <input id="sendOffers" type="checkbox">
+        <input type="checkbox" name="checkbox" id="sendOffers" onclick="showHideDiv()">
         <label for="sendOffers">Send me special offers </label>
 
           <div id="receiveOffers">
@@ -55,7 +55,6 @@
     <a href="" type="button" id="submitBtn">Submit</a>
   </div>
 </form>
-  
   </div>  
   </div>
 </body>

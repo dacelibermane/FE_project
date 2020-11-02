@@ -94,7 +94,7 @@ h1 {
   position: relative;
 }
 
-#inputGroup {
+#form {
   margin-top: 15px;
 }
 
@@ -110,6 +110,7 @@ h1 {
   width: 100%;
   border-radius: 4px;
   padding: 5px;
+  outline: none;
 }
 
 .error-msg {
@@ -151,4 +152,20 @@ h1 {
   font-size: 25px;
   color: #5372b1;
   cursor: pointer;
+}
+
+#dataTable {
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #5e74a1;
+  width: 50%;
+  border-collapse: collapse;
+  color: #dff5f7;
+  font-weight: bold;
+}
+
+#dataTable td,
+#dataTable th {
+  padding: 10px;
+  border: 1px solid black;
 }

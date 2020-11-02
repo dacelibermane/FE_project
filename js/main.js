@@ -7,8 +7,6 @@ const password = document.getElementById('password');
 const saveBtn = document.getElementById('submitBtn');
 
 
-
-
 //The form popup after clicking the button
 document.getElementById('btn').addEventListener('click', function(){
   document.querySelector('.popup-form').style.display = 'flex';
@@ -28,14 +26,12 @@ document.getElementById('btn').addEventListener('click', function showHide(){
   }
 });
   
-
 //form validation
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   checkInputs();
 });
-
 
 function checkInputs(){
   //getting values form input
@@ -57,16 +53,11 @@ function checkInputs(){
     showSuccess(email);
   }
 
-  
   if(passwordValue === ''){
     showError(password, 'Password cannot be blank');
   }else{
     showSuccess(password);
   }
-
-  // alert(usernameValue + " , thank you! We received your request")
-
-
 }
 
 function showError(input, message) {

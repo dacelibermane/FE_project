@@ -58,7 +58,7 @@ function checkInputs(){
   }else{
     showSuccess(password);
   }
-}
+};
 
 function showError(input, message) {
   const formControl = input.parentElement;
@@ -67,16 +67,16 @@ function showError(input, message) {
   errorMsg.innerText = message;
 
   formControl.className = 'input-wrapper error';
-}
+};
 
 function showSuccess(input, message){
   const formControl = input.parentElement;
   formControl.className = 'input-wrapper success';
-}
+};
 
 function isEmail(email){
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
+};
 
 // saving to local storage
 saveBtn.onclick = function (){
@@ -89,8 +89,8 @@ saveBtn.onclick = function (){
   if(saveUsername && saveEmail){
     localStorage.setItem(saveUsername, saveEmail);
     location.reload();
-  }
-};
+    }
+  };
 
 });
 

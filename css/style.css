@@ -74,12 +74,13 @@ h1 {
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   );
-  opacity: 0.7;
+  opacity: 0.9;
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px 40px;
   display: none;
 }
 
@@ -89,13 +90,11 @@ h1 {
   background: #e1f8fe;
   border-radius: 10px;
   text-align: center;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 16px;
   position: relative;
-}
-
-#form {
-  margin-top: 15px;
 }
 
 .input-wrapper {
@@ -109,17 +108,9 @@ h1 {
 .user-input {
   width: 100%;
   border-radius: 4px;
+  display: block;
   padding: 5px;
   outline: none;
-}
-
-.error-msg {
-  height: 12px;
-  font-size: 16px;
-  color: #8a1616;
-  position: absolute;
-  left: 210px;
-  padding: 2 px;
 }
 
 #sendOffers,
@@ -128,21 +119,48 @@ h1 {
   margin-bottom: 15px;
 }
 
+#receiveOffers {
+  visibility: hidden;
+}
+
 #submitBtn {
   text-align: center;
   background-color: #5372b1;
   border: 2px solid #dff5f7;
-  padding: 8px 24px;
-  border-radius: 50px;
+  color: #e1f8fe;
+  padding: 4px;
+  border-radius: 4px;
   transition: all 0.4s ease;
+  font-size: 16px;
   cursor: pointer;
-  font-size: 22px;
+  width: 30%;
 }
 
 #submitBtn:hover {
   background-color: #dff5f7;
   border: 2px solid #5372b1;
   color: #5372b1;
+}
+
+.input-wrapper.success input {
+  border: 3px solid rgb(31, 230, 58);
+}
+
+.input-wrapper.error input {
+  border: 3px solid rgb(206, 7, 7);
+}
+
+small {
+  visibility: hidden;
+  position: absolute;
+  height: 12px;
+  left: 100px;
+  padding: 2px;
+}
+
+.input-wrapper.error small {
+  color: rgb(206, 7, 7);
+  visibility: visible;
 }
 
 .close {
@@ -154,18 +172,29 @@ h1 {
   cursor: pointer;
 }
 
-#dataTable {
+.dataTable {
   margin: 0 auto;
   margin-top: 20px;
-  background-color: #5e74a1;
   width: 50%;
   border-collapse: collapse;
-  color: #dff5f7;
   font-weight: bold;
+  color: #2c3238;
 }
 
-#dataTable td,
-#dataTable th {
+.dataTable thead tr {
+  background-color: #b8d2fa;
+}
+
+td,
+th {
   padding: 10px;
   border: 1px solid black;
+}
+
+tr:nth-child(odd) {
+  background-color: #96a8ca;
+}
+
+tr:nth-child(even) {
+  background-color: #b8d2fa;
 }
